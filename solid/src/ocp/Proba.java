@@ -1,4 +1,4 @@
-package pakete1;
+package ocp;
 
 public class Proba {
 

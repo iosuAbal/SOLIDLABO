@@ -1,4 +1,4 @@
-package pakete1;
+package ocp;
 
 public class Square extends Figure {
 	int x,y,r,luzera;
