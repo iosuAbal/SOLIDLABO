@@ -20,6 +20,10 @@ public class Bill {
 		// VAT kalkulatzen dugu
 		VAT= (float) v.kalkulatuVat(billAmount);
 		// Totala kalkulatzen dugu
-		billTotal = (billAmount - billDeduction) + VAT;
-	}
+		if(code.equals('0')) {
+			billTotal = (billAmount - billDeduction);
+		}
+		else {
+			billTotal = (billAmount - billDeduction) + VAT;
+		}}
 }

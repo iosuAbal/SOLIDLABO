@@ -3,7 +3,7 @@ package lsp;
 import java.util.Vector;
 
 public class Project {
-	public Vector<ProjectFile> files=new Vector<ProjectFile>();
+	public Vector<ProjectFile> files;
 	public void addProject(ProjectFile p){
 		files.add(p);
 	}

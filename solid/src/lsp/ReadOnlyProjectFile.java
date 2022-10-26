@@ -5,7 +5,7 @@ public class ReadOnlyProjectFile extends ProjectFile{
 		super(filePath);
 		// TODO Auto-generated constructor stub
 	}
-	public void storeFile() {
-		System.out.println("ERROR, can not be Saved");
+	public void loadFile(){
+		System.out.println("file loaded from "+filePath);
 	}
 }
