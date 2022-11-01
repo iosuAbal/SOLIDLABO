@@ -1,9 +1,11 @@
 package lsp;
 
-public abstract class ProjectFile {
-	public String filePath;
-	public ProjectFile(String filePath){
-		this.filePath=filePath;
+public class ProjectFile implements iLoad{
+	protected String filepath;
+	public ProjectFile(String filePath) {
+		this.filepath=filePath;
 	}
-	public abstract void loadFile();
+	public void loadFile(){
+		System.out.println("file loaded from "+filepath);
+	}
 }

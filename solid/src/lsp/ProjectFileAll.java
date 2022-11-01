@@ -1,14 +1,12 @@
 package lsp;
 
-public class ProjectFileAll extends ProjectFile{
+public class ProjectFileAll extends ProjectFile implements  iStore{
+	
 	public ProjectFileAll(String filePath) {
 		super(filePath);
-		// TODO Auto-generated constructor stub
 	}
-	public void loadFile(){
-		System.out.println("file loaded from "+filePath);
-	}
+	
 	public void storeFile(){
-		System.out.println("file saved to "+filePath);
+		System.out.println("file saved to "+filepath);
 	}
 }

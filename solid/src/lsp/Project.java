@@ -1,20 +1,22 @@
 package lsp;
 
-import java.util.Vector;
+import java.util.List;
+
 
 public class Project {
-	public Vector<ProjectFile> files;
+	public List<iLoad> files;
+	public List<iStore> files2;
 	public void addProject(ProjectFile p){
 		files.add(p);
 	}
 	public void loadAllFiles(){
-		for (ProjectFile f:files)
+		for (iLoad f:files)
 			f.loadFile();
 	}
 	public void storeAllFiles(){
-		for (ProjectFile f:files)
-			if(f instanceof ProjectFileAll) {
-				((ProjectFileAll) f).storeFile();
-			}
+		for (iStore f:files2) {
+			f.storeFile();
+		}
+			
 	}
 }
