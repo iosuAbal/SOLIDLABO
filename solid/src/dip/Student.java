@@ -13,20 +13,18 @@ public class Student {
 	// Irakasgai batean matrikulatzen duen metodoa.
 	public void register(String subject, PreconditionInterface p, Deduction d, SubjectQuotesInterface sq) {
 		// Aurrebaldintzak konprobatzen dira
-		//Preconditions p=new Preconditions();
-		
 		boolean isPosible = p.isPosible(subject , subjectRecord);
+		
 		if (isPosible) {
 			// Dedukzioa kalkulatu sex eta edadearen arabera
-			//Deduction d=new Deduction();
 			
 			int percentage = d.calcDeduction(sex, year);
 			// Irakasgaiaren prezioa lortu
-			//SubjectQuotes sq=new SubjectQuotes();
 		
 			int quote = sq.getPrice(subject);
 			// HashMap batean gordetzen du eta ordaindu behar duen balioa eguneratu
 			subjectRecord.put(subject,null);
+			int percentaje = 0;
 			toCharge = toCharge+(quote-percentaje*quote/100);
 		}
 	}

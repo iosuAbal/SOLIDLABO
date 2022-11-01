@@ -5,8 +5,9 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Emailable ga = new GmailAccount("Alex", "alejo.amenabar@gmail.com");
+		EmailSender sender= new EmailSender();
 		
-		EmailSender.sendEmail(ga, "emailMessage");
+		sender.sendEmail(ga, "emailMessage");
 	}
 
 }

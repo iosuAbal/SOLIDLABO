@@ -5,4 +5,5 @@ public abstract class ProjectFile {
 	public ProjectFile(String filePath){
 		this.filePath=filePath;
 	}
+	public abstract void loadFile();
 }
