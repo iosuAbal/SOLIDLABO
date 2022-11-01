@@ -1,6 +1,6 @@
 package lsp;
 
-public class ProjectFile implements iLoad{
+public abstract class ProjectFile implements iLoad{
 	protected String filepath;
 	public ProjectFile(String filePath) {
 		this.filepath=filePath;
